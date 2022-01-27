@@ -68,15 +68,7 @@ p {
 .dropdown-item{
   color: #fff;
 }
-.scroll-down{
-	position: absolute;
-	left: 50%;
-	bottom: 30px;
-	height: 30px;
-	width: 30px;
-	margin-left: -15px;
-	animation:scrollDown 2s ease infinite;
-}
+
 
 /* about section */
 .about-section{
@@ -110,7 +102,7 @@ p {
 }
 
 .about-section .section-title{
-	margin-bottom: 30px;
+	margin: 30px 0px;
 	padding:0;
 }
 
@@ -144,26 +136,82 @@ p {
    margin-top: 30px;
 }
 
- /* Coverslides Section  */
- .carousel{
-
-display: inline-block;
+ /* cover Section  */
+ .row{
+	min-height: 100%;
+  margin: 0px;
+}
+.home-content{
+	
+	flex:0 0 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.home-content h4{
+	font-size:20px;
+	color:#ffffff;
+	padding-top:200px;
+}
+.home-content h1{
+	font-size: 40px;
+	
+	color:#ffffff;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 10px;
+  position: relative;
 }
 
+.scroll-down{
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	height: 30px;
+	width: 30px;
+	margin-left: -15px;
+	animation:scrollDown 2s ease infinite;
+}
+ .overlay {
+   position: absolute;
+  min-width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  /* right: 0;
+  bottom: 0; */
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  z-index: 9; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
 
-#coverslides{
+#cover{
   min-height: 100vh;
-  background-image: url('../images/4.jpg');
+  background-image: url('../img/3.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 2;
   padding:0 15px;
-  
+
 }
-.img-size{
-  height: 65vh;
-  Width: 60%; 
+#about{
+  min-height: 100vh;
+  background-image: url('../img/52.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  padding:50px 100px;
+text-align: center;
+color: #fff;
+}
+.about-text{
+  text-align: left;
+  color: aliceblue;
+  margin-left: 42%;
+}
+.stats{
+  margin-top: 15%;
 }
 
 
@@ -172,13 +220,30 @@ display: inline-block;
   }
 #Pricing{
   background-color: #C2FFF9;
-  padding: 7% 15%;
+  padding: 3% 15%;
   text-align: center;
 }
 .pricing-column {
   padding: 3% 2%;}
   .Card{
   background-color: #009DAE ;
+}
+.card-title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+.price-value{
+  font-size: 1.5rem;
+  
+  text-align: center;
+  color: #000000;
+}
+.price{
+  font-family: 'Arizonia', cursive;
+font-weight: 100;
+  font-size: 5rem;
 }
 
 #footer {
@@ -280,6 +345,60 @@ border-radius: 4px;
 background-color: #f8f8f8;
 resize: none;
 }
+/* Service Section */
+
+.service-section{
+	padding:80px 0 0;
+}
+
+.service-section .service-item{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding:15px;
+}
+.service-section .service-item-inner{
+ position: relative;
+ overflow:hidden;
+}
+.service-section .service-item-inner img{
+	width: 100%;
+	display: block;
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+.service-section .service-item-inner:hover img{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+.service-section .service-item-inner .overlay{
+	position: absolute;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	background-color:rgba(0,0,0,0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+}
+.service-section .service-item-inner:hover .overlay{
+	background-color: transparent;
+}
+
+.service-section .service-item-inner .overlay h4{
+	color:#ffffff;
+	font-size: 20px;
+	margin:0;
+	text-align: center;
+	transition: all 0.5s ease;
+	text-transform: capitalize;
+}
+.service-section .service-item-inner .overlay:hover h4{
+  transform: translateX(30px);
+  opacity:0;
+}
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' \
   xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' \
