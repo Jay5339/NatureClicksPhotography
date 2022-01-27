@@ -148,12 +148,12 @@ p {
 	text-align: center;
 }
 .home-content h4{
-	font-size:20px;
+	font-size:30px;
 	color:#ffffff;
 	padding-top:200px;
 }
 .home-content h1{
-	font-size: 40px;
+	font-size: 50px;
 	
 	color:#ffffff;
 	text-transform: uppercase;
@@ -170,6 +170,7 @@ p {
 	width: 30px;
 	margin-left: -15px;
 	animation:scrollDown 2s ease infinite;
+  z-index: 20;
 }
  .overlay {
    position: absolute;
@@ -179,7 +180,7 @@ p {
   left: 0;
   /* right: 0;
   bottom: 0; */
-  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   z-index: 9; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
