@@ -170,7 +170,7 @@ p {
 	width: 30px;
 	margin-left: -15px;
 	animation:scrollDown 2s ease infinite;
-  z-index: 20;
+  z-index: ;
 }
  .overlay {
    position: absolute;
