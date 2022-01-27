@@ -1,3 +1,45 @@
+
+@media(max-width: 767.98px) { 
+  
+  .home-section .cover{
+    min-height: 50vh;
+    width: 100%;
+    background-image: url('../img/3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+  }
+  .home-content h4{
+    font-size:10px;
+    color:#ffffff;
+    padding-top:150px;
+  }
+  .home-content h1{
+    font-size: 25px;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+ .section-title {  text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 5%;
+    
+  }
+  
+  .about-text{
+    line-height: 26px;
+    text-align: left;
+    color: aliceblue;
+   
+  }
+}
+
 body {
   font-family: "Montserrat",sans-serif;
 }
@@ -48,6 +90,7 @@ p {
   font-weight: 600;
   color: #fff;
   margin-left: 1%;
+ 
 }
 .headtitle:hover{
   color:#FFE652;
@@ -79,60 +122,54 @@ p {
 	max-width: 33.33%;
 	padding:0 15px;
 }
-.about-section .about-img .img-box{
-	position: relative;
-}
-.about-section .about-img .img-box .shape-02{
-   position: absolute;
-   height: 30px;
-   width: 30px;
-   border:2px solid #FF9800;
-   left:30px;
-   top:30px;
-   animation:ani01 5s linear infinite;
-}
-.about-section .about-img .img-box img{
-	width: 100%;
-	display: block;
-} 
+
 .about-section .about-content{
 	flex:0 0 66.66%;
 	max-width: 66.66%;
 	padding:0 15px;
 }
 
-.about-section .section-title{
-	margin: 30px 0px;
-	padding:0;
+.section-title {
+  text-align: left;
+  color: aliceblue;
+  margin-left: 42%;
+  margin-top: 5%;
+  
 }
 
-.about-section .about-content p{
-	font-size: 16px;
-	color:#555555;
+.about-text {
 	line-height: 26px;
-	margin:0;
+  text-align: left;
+  color: aliceblue;
+  margin-left: 42%;
 }
-.about-section .about-content .stats .stat-box{
+.about-section .stats{
+  margin-top: 3%;
+  margin-left: 60%;
+}
+
+.about-section  .stats .stat-box{
 	flex:0 0 25%;
 	max-width: 25%;
 	padding:0 15px;
 	text-align: center;
 	margin-top:30px;
+  margin-right: 10%;
 }
 
-.about-section .about-content .stats .stat-box h2{
+.about-section  .stats .stat-box h2{
 	font-size: 40px;
-	color:#000000;
+	color:#fff;
 	margin:0 0 5px;
 }
-.about-section .about-content .stats .stat-box h5{
+.about-section .stats .stat-box h5{
 	font-size: 16px;
-	color:#555555;
+	color:#000000;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.about-section .about-content .btn{
+.about-section .btn{
    margin-top: 30px;
 }
 
@@ -140,26 +177,33 @@ p {
  .row{
 	min-height: 100%;
   margin: 0px;
+  min-width: 100%;
+}
+.home-section{
+  width:100%;
 }
 .home-content{
 	
 	flex:0 0 100%;
 	max-width: 100%;
 	text-align: center;
+  color: red !important;
 }
-.home-content h4{
-	font-size:30px;
+
+h4{
+	font-size:40px;
 	color:#ffffff;
-	padding-top:200px;
+	padding-top:350px;
 }
-.home-content h1{
-	font-size: 50px;
-	
-	color:#ffffff;
+h1{
+	font-size: 60px;
+	color:#fff;
 	text-transform: uppercase;
 	font-weight: 900;
-	letter-spacing: 10px;
+	letter-spacing: 20px;
   position: relative;
+  transition: all 0.5s ease;
+  text-align: center;
 }
 
 .scroll-down{
@@ -185,14 +229,14 @@ p {
   cursor: pointer; /* Add a pointer on hover */
 }
 
-#cover{
+.cover{
   min-height: 100vh;
   background-image: url('../img/3.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 2;
-  padding:0 15px;
+  
 
 }
 #about{
@@ -206,15 +250,6 @@ p {
 text-align: center;
 color: #fff;
 }
-.about-text{
-  text-align: left;
-  color: aliceblue;
-  margin-left: 42%;
-}
-.stats{
-  margin-top: 15%;
-}
-
 
   .cta-heading {
     font-size: 3rem;
@@ -226,9 +261,7 @@ color: #fff;
 }
 .pricing-column {
   padding: 3% 2%;}
-  .Card{
-  background-color: #009DAE ;
-}
+
 .card-title{
   font-size: 1.8rem;
   font-weight: bold;
@@ -349,9 +382,20 @@ resize: none;
 /* Service Section */
 
 .service-section{
-	padding:80px 0 0;
+	padding:80px 0 ;
+  background-color: #fff ;
 }
-
+.service-section h1{
+	font-size: 60px;
+	color:black;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 20px;
+  position: relative;
+  transition: all 0.5s ease;
+  text-align: center;
+  padding-bottom: 30px;
+}
 .service-section .service-item{
 	flex:0 0 33.33%;
 	max-width: 33.33%;
