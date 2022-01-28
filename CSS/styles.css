@@ -1,8 +1,8 @@
 
-@media(max-width: 767.98px) { 
+@media screen and (max-width: 767.98px) { 
   
   .home-section .cover{
-    min-height: 50vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url('../img/3.jpg');
     background-size: cover;
@@ -10,36 +10,74 @@
     position: relative;
     z-index: 2;
   }
+
+  .headtitle{
+    font-size: 1.5rem !important;
+    padding-left: 15%;
+    
+  }
   .home-content h4{
-    font-size:10px;
+    font-size:20px;
     color:#ffffff;
-    padding-top:150px;
+    padding-top:350px;
   }
   .home-content h1{
-    font-size: 25px;
+    font-size: 20px;
     color:#ffffff;
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     position: relative;
-    transition: all 0.5s ease;
   }
- .section-title {  text-align: center;
-    font-size: 30px;
-    color: aliceblue;
-    text-align: center;
-    margin-top: 5%;
-    
+ #about{
+   padding:10px 10px 50px 80px!important;
+ }
+ .about-title {  text-align: center;
+    font-size: 15px !important;
+   letter-spacing: 10px!important;
+    margin: 0% 0% 0% 0% !important;
+    text-align: left!important;
   }
   
   .about-text{
-    line-height: 26px;
-    text-align: left;
-    color: aliceblue;
-   
+    line-height: 16px !important; 
+    margin: 0% 0% 0% 0% !important;
+    font-size:10px !important;
+    text-align: left!important;
+    
+  }
+  .headtitle{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    
+  }
+  .stats{
+    margin-right:100px!important;
+margin-left: 0%;
+  }
+  .service-section{
+    padding:10px!important;
+  }
+  .service-title{
+    font-size: 30px!important;
+    letter-spacing: 10px!important;
+    padding: 0% 0%!important;
+    margin: 4% 0% 1%!important;
+  }
+  .cta-heading {
+    font-size: 1.5rem!important;
+  }
+  .price{
+    font-size: 4rem!important;
+    margin: 0% !important;
+  }
+  .pricetitletag{
+    font-size: 0.75rem!important;
   }
 }
-
+/* Normal */
 body {
   font-family: "Montserrat",sans-serif;
 }
@@ -114,6 +152,18 @@ p {
 
 
 /* about section */
+#about{
+  min-height: 100vh;
+  background-image: url('../img/52.jpg');
+  background-size: cover;
+  background-position: top 60% right 60%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  padding:50px 100px;
+
+color: #fff;
+}
 .about-section{
 	padding:80px 0;
 }
@@ -129,7 +179,8 @@ p {
 	padding:0 15px;
 }
 
-.section-title {
+.about-title {
+  font-size: 30px;
   text-align: left;
   color: aliceblue;
   margin-left: 42%;
@@ -239,17 +290,7 @@ h1{
   
 
 }
-#about{
-  min-height: 100vh;
-  background-image: url('../img/52.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: -1;
-  padding:50px 100px;
-text-align: center;
-color: #fff;
-}
+
 
   .cta-heading {
     font-size: 3rem;
@@ -385,8 +426,8 @@ resize: none;
 	padding:80px 0 ;
   background-color: #fff ;
 }
-.service-section h1{
-	font-size: 60px;
+.service-title {  
+  font-size: 60px;
 	color:black;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -395,10 +436,12 @@ resize: none;
   transition: all 0.5s ease;
   text-align: center;
   padding-bottom: 30px;
+  
 }
+
 .service-section .service-item{
-	flex:0 0 33.33%;
-	max-width: 33.33%;
+	/* flex:0 0 33.33%;
+	max-width: 33.33%; */
 	padding:15px;
 }
 .service-section .service-item-inner{
