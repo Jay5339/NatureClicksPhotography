@@ -94,7 +94,7 @@ p {
   text-align: center;
 }
 #download{
-  background-color: #fff;
+  background-color:#e2f0f9 ;
     padding: 7% 15%;
     text-align: center;
   }
@@ -165,7 +165,7 @@ p {
   z-index: -1;
   padding:50px 100px;
 
-color: #fff;
+color: #f2f1ef;
 }
 .about-section{
 	padding:80px 0;
@@ -284,7 +284,7 @@ h1{
     font-size: 3rem;
   }
 #Pricing{
-  background-color: #f6f6f6;
+  background-color: #b4dcf0;
   padding: 3% 15%;
   text-align: center;
 }
@@ -318,7 +318,7 @@ font-weight: 100;
   font-size: 1rem;
   color: black;
   
-  background-color: #f6f6f6 ;
+  background-color: #b4dcf0 ;
   
   font-family: "Montserrat",sans-serif;
   
@@ -416,7 +416,7 @@ resize: none;
 
 .service-section{
 	padding:80px 0 ;
-  background-color: #fff ;
+  background-color: #e2f0f9 ;
 }
 .service-title {  
   font-size: 60px;
@@ -432,8 +432,7 @@ resize: none;
 }
 
 .service-section .service-item{
-	/* flex:0 0 33.33%;
-	max-width: 33.33%; */
+
 	padding:15px;
 }
 .service-section .service-item-inner{
@@ -457,7 +456,7 @@ resize: none;
 	height: 100%;
 	width: 100%;
 	background-color:rgba(0,0,0,0.6);
-	display: flex;
+	display: block  ;
 	align-items: center;
 	justify-content: center;
 	transition: all 0.5s ease;
@@ -473,10 +472,11 @@ resize: none;
 	text-align: center;
 	transition: all 0.5s ease;
 	text-transform: capitalize;
+  padding-top:30%;
 }
 .service-section .service-item-inner .overlay:hover h4{
   transform: translateX(30px);
-  opacity:0;
+  opacity:50;
 }
 
 .custom-toggler .navbar-toggler-icon {
