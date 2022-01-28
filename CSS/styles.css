@@ -76,6 +76,9 @@ margin-left: 0%;
   .pricetitletag{
     font-size: 0.75rem!important;
   }
+  #download{
+    padding: 7% 5%!important;
+  }
 }
 /* Normal */
 body {
@@ -91,7 +94,7 @@ p {
   text-align: center;
 }
 #download{
-  background-color: #71DFE7;
+  background-color: #fff;
     padding: 7% 15%;
     text-align: center;
   }
@@ -167,18 +170,6 @@ color: #fff;
 .about-section{
 	padding:80px 0;
 }
-.about-section .about-img{
-	flex:0 0 33.33%;
-	max-width: 33.33%;
-	padding:0 15px;
-}
-
-.about-section .about-content{
-	flex:0 0 66.66%;
-	max-width: 66.66%;
-	padding:0 15px;
-}
-
 .about-title {
   font-size: 30px;
   text-align: left;
@@ -200,8 +191,7 @@ color: #fff;
 }
 
 .about-section  .stats .stat-box{
-	flex:0 0 25%;
-	max-width: 25%;
+
 	padding:0 15px;
 	text-align: center;
 	margin-top:30px;
@@ -238,7 +228,7 @@ color: #fff;
 	flex:0 0 100%;
 	max-width: 100%;
 	text-align: center;
-  color: red !important;
+
 }
 
 h4{
@@ -287,8 +277,6 @@ h1{
   background-position: center;
   position: relative;
   z-index: 2;
-  
-
 }
 
 
@@ -296,7 +284,7 @@ h1{
     font-size: 3rem;
   }
 #Pricing{
-  background-color: #C2FFF9;
+  background-color: #f6f6f6;
   padding: 3% 15%;
   text-align: center;
 }
@@ -304,16 +292,20 @@ h1{
   padding: 3% 2%;}
 
 .card-title{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
   color: #000000;
 }
 .price-value{
-  font-size: 1.5rem;
-  
+  font-size: 1.2rem;
+  margin: 0rem !important;
   text-align: center;
   color: #000000;
+}
+.card-detail{
+  font-size: 0.75rem;
+  margin: 0.5rem !important;;
 }
 .price{
   font-family: 'Arizonia', cursive;
@@ -324,10 +316,10 @@ font-weight: 100;
 #footer {
   font-family: sans-serif;
   font-size: 1rem;
-  color: #DBEDF3;
+  color: black;
   
-  background-color: #072227 ;
-  color: #fff;
+  background-color: #f6f6f6 ;
+  
   font-family: "Montserrat",sans-serif;
   
 
