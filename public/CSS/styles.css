@@ -178,21 +178,7 @@
         color: #fff;
     }
     
-    .sidebar {
-        position: absolute;
-      position: fixed;
-      left:90%;
-    }
-    .sidebar:hover{
-        background-color: rgb(181, 193, 231);
-    }
-    .sidesocial:hover {
-        font-size: 2.5rem;
-    }
     
-    .sidesocial {
-       font-size: 1.5rem;
-    }
     /* about section */
     
     #about {
