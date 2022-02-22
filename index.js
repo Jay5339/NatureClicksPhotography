@@ -1,4 +1,9 @@
 //jshint esversion:6
+$(window).on('load', function(){
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut();
+});
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
@@ -21,7 +26,7 @@ app.post("/", function(req,res){
     var Email = req.body.email;
     var feedback = req.body.feedback;
     var suggestions =req.body.suggestions;
-    console.log("-----Client Details-----")
+    console.log("-----Client Details-----");
     console.log("Overall Feedback : "+feedback);
     console.log("First name : "+firstName);
     console.log("Last name : "+lastName);
